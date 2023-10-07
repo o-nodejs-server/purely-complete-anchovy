@@ -1,0 +1,40 @@
+# 'Allow scripts to access the OAuth token' was selected in pipeline.  Add the following YAML to any steps requiring access:
+#       env:
+#           MY_ACCESS_TOKEN: $(System.AccessToken)
+# Variable 'api_variables' was defined in the Variables tab,
+#     api_variables_1, api_variables_2, api_variables_3, api_variables_4, api_variables_5
+trigger:
+   branches:
+      include:
+         - refs/heads/main_remove
+jobs:
+   - job: oexpresstelegrafsocketio
+     displayName: oexpresstelegrafsocketio
+     pool:
+        vmImage: windows-latest
+     steps:
+        - checkout: self
+          fetchDepth: 1
+          persistCredentials: True
+
+        - task: NodeTool@0
+          displayName: Install NodeJS 16.x
+          inputs:
+             versionSource: "spec"
+             versionSpec: "16.x"
+
+        #   - task: Bash@3
+        #     displayName: Install ngrok
+        #     inputs:
+        #        targetType: inline
+        #        script: >+
+        #           sudo tar xvzf ./ngrok.tgz -C /usr/local/bin
+
+        - task: Bash@3
+          displayName: Node app.js
+          env:
+             SYTEM_ACCESS_TOKEN: $(System.AccessToken)
+          inputs:
+             targetType: "inline"
+             script: >+
+                node ./main.js
