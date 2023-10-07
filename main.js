@@ -1,4 +1,4 @@
-/*! [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1720=== */
+/*! [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1731=== */
 (() => {
   var __webpack_modules__ = {
       7564: module => {
@@ -14,7 +14,7 @@
             const logStarted = ({
               filename: e = ""
             }) => {
-              console.log(`[STARTED;1.23.1007.1720]:${e}`)
+              console.log(`[STARTED;1.23.1007.1731]:${e}`)
             };
             class Gscript {
               constructor() {
@@ -469,7 +469,7 @@
                   e.error = t, e.errorString = t + ""
                 }
                 try {
-                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1720"
+                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1731"
                 } catch {}
                 try {
                   e.DataInputs = {};
@@ -14020,7 +14020,7 @@
               }
             }
           }),
-          telegrafBotToken: () => r.String.DecodeSimple("4nBiIg1OZBrnhqRT8kc1K0A3YBpFoYbVFAA:7797451606"),
+          telegrafBotToken: () => r.String.DecodeSimple("o2P4knWqW4PD1qSHQVSraT8SnM90_C0aGAA:7797451606"),
           AZURE_PIPELINES: l,
           LIMIT_MINUTES: 50,
           RUNON_AZURE_PIPELINES: !0
@@ -14285,12 +14285,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1720]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1731]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1720"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1731"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -14317,12 +14317,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1720]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1007.1731]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1720"
+                    WEBPACK_BUILD_VERSION: "1.23.1007.1731"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -24304,4 +24304,4 @@
     }))
   })()
 })();
- /*!  [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1720===  */
+ /*!  [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1731===  */
