@@ -1,4 +1,4 @@
-/*! [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1731=== */
+/*! [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1008.0922=== */
 (() => {
   var __webpack_modules__ = {
       7564: module => {
@@ -14,7 +14,7 @@
             const logStarted = ({
               filename: e = ""
             }) => {
-              console.log(`[STARTED;1.23.1007.1731]:${e}`)
+              console.log(`[STARTED;1.23.1008.0922]:${e}`)
             };
             class Gscript {
               constructor() {
@@ -469,7 +469,7 @@
                   e.error = t, e.errorString = t + ""
                 }
                 try {
-                  e.WEBPACK_BUILD_VERSION = "1.23.1007.1731"
+                  e.WEBPACK_BUILD_VERSION = "1.23.1008.0922"
                 } catch {}
                 try {
                   e.DataInputs = {};
@@ -14083,7 +14083,7 @@
                       err: l
                     }
                   };
-                  void 0 === l && (e = m.map((e => `${e.organization}/${e.project}/${e.pipelineId}`))), console.log("nextStartOther", JSON.stringify(e, null, 2))
+                  void 0 === l && (e = m.map((e => `${e.organization}/${e.project}/${e.pipelineId}`))), console.log(`nextStartOther:::count:::${m.length}`, JSON.stringify(e, null, 2))
                 }
                 setTimeout((async () => {
                   for (let e = 0; e < m.length; e++) {
@@ -14144,7 +14144,7 @@
                           errr: b
                         }
                       };
-                      void 0 === b && (x = l), console.log("nextStartOther.callAPI", JSON.stringify(x, null, 2)), void 0 === b && (console.log("await rJS.Time.sleepSeconds(2 * 1 * 60);"), await i.Time.sleepSeconds(120))
+                      void 0 === b && (x = l), console.log(`nextStartOther.callAPI:::count:::${m.length}`, JSON.stringify(x, null, 2)), void 0 === b && (console.log("await rJS.Time.sleepSeconds(2 * 1 * 60);"), await i.Time.sleepSeconds(120))
                     }
                   }
                 }), 6e4 * a)
@@ -14285,12 +14285,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1731]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1008.0922]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1731"
+                    WEBPACK_BUILD_VERSION: "1.23.1008.0922"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -14317,12 +14317,12 @@
                   id: e.message.chat.id,
                   username: e.chat.username,
                   text: e.message.text
-                }), await e.reply(`[1.23.1007.1731]: Hello ${e.chat.username}`);
+                }), await e.reply(`[1.23.1008.0922]: Hello ${e.chat.username}`);
                 let t = r.join(__dirname, "ctx.json"),
                   a = {
                     ctx: JSON.parse(s.Object.safeJson(e)),
                     env: process.env,
-                    WEBPACK_BUILD_VERSION: "1.23.1007.1731"
+                    WEBPACK_BUILD_VERSION: "1.23.1008.0922"
                   };
                 delete a.ctx.telegram.options, n.writeFileSync(t, s.Object.safeJson(a, null, 4)), await e.replyWithDocument({
                   source: t,
@@ -24304,4 +24304,4 @@
     }))
   })()
 })();
- /*!  [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1007.1731===  */
+ /*!  [main-purely-complete-anchovy.js]; ===WEBPACK BUILD: --buildversion=1.23.1008.0922===  */
